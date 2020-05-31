@@ -1,16 +1,15 @@
 <template>
   <div id="app">
-    <img src="./assets/lr1.jpg" height="50%" width="50%" />
-
-    Hello~
     <router-view/>
   </div>
 </template>
 
 <script>
-export default {
-  name: 'App'
-}
+  import NavMenu from '@/components/common/NavMenu'
+  export default {
+    name: 'App',
+    components: {NavMenu}
+  }
 </script>
 
 <style>
@@ -20,6 +19,6 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+
 }
 </style>
